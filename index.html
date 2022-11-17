@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Hello</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js" integrity="sha512-iWPnCISAd/J+ZacwV2mbNLCaPGRrRo5OS81lKTVPtRg1wGTC20Cfmp5Us5RcbLv42QLdbAWl0MI57yox5VecQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <img id="image"/>
+        <script>
+            const socket = io.connect('http://localhost:3000/');
+            socket.on('image', (data) =>{
+                console.log(data);
+                let image = document.getElementById('image');
+                image.src = data;
+                // image.setAttribute('src', image);
+
+            });
+            
+        </script>
+    </body>
+</html>

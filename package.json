@@ -1,0 +1,26 @@
+{
+  "name": "streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@u4/opencv-build": "^0.5.12",
+    "@u4/opencv4nodejs": "^6.2.5",
+    "express": "^4.18.2",
+    "node-webcam": "^0.8.1",
+    "save": "^2.9.0",
+    "socket.io": "^4.5.3"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": "1",
+    "OPENCV_INCLUDE_DIR": "",
+    "OPENCV_LIB_DIR": "",
+    "OPENCV_BIN_DIR": ""
+  }
+}
